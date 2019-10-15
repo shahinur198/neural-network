@@ -4,10 +4,10 @@
 https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/
 
 ```
-for(i=0;i<Epoch_Size;i++)
+for(i=1;i<=Epoch_Size;i++)
 {
-  for(j=0;j<Number_Of_Samples_Of_Training_Dataset;j++)
-    if(j==Batch_Size)
+  for(j=1;j<=Number_Of_Samples_Of_Training_Dataset;j++)
+    if(j%Batch_Size==0)
     {
       # Model Update.........
     }
